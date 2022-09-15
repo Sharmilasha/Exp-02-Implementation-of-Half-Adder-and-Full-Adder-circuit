@@ -38,17 +38,45 @@ If the output is 1, then the led glows.
 Program:
 /*
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by:A.SHARMILA 
+RegisterNumber: 212221230094 
 */
+### HALF ADDER:
+module HalfAdder(A,B,sum,carry);
+input A,B;
+output sum,carry;
+xor(sum,A,B);
+and(carry,A,B);
+endmodule
+### FULL ADDER:
+module FullAdder(a,b,c,Sum,Carry);
+input a,b,c;
+output Sum,Carry;
+assign Sum = ((a^b)^c);
+assign Carry = ((a&b) | (b&c) | (c&a));
+endmodule
 Logic symbol & Truthtable
 RTL realization
 
 ### Output:
 ### RTL
+![RTL](https://user-images.githubusercontent.com/94506182/190492330-fe3e330d-031a-4e83-bf24-feb4eed3c498.jpeg)
+
+
 ### TIMING DIAGRAM
+![TI FOR RTL](https://user-images.githubusercontent.com/94506182/190492512-71a3e381-54dd-4c83-9b90-33c27ed92bd6.jpeg)
 
 
 ### TRUTH TABLE 
+![TB](https://user-images.githubusercontent.com/94506182/190492655-244d1cd8-4947-417c-b891-1509f4d17613.jpeg)
+### FULL ADDER
+RTL:
+![full RTL](https://user-images.githubusercontent.com/94506182/190492949-9d703813-56cb-4eef-b5ec-4af154c79433.jpeg)
+### TIMING DIAGRAM
+![TIME](https://user-images.githubusercontent.com/94506182/190493129-19ca5502-31d4-4bea-8aaf-ed6a71f5fc6e.jpeg)
+### TRUTH TABLE
+![TRUTH](https://user-images.githubusercontent.com/94506182/190493300-1dca71e4-72e3-49f6-8041-ee78db9521bd.jpeg)
+
 
 ### Result:
+To design a half adder and full adder circuit and verify its truth table in Quartus using Verilog programming is successfully done.
