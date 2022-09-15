@@ -42,13 +42,16 @@ Developed by:A.SHARMILA
 RegisterNumber: 212221230094 
 */
 ### HALF ADDER:
+```
 module HalfAdder(A,B,sum,carry);
 input A,B;
 output sum,carry;
 xor(sum,A,B);
 and(carry,A,B);
 endmodule
+```
 ### FULL ADDER:
+```
 module FullAdder(a,b,c,Sum,Carry);
 input a,b,c;
 output Sum,Carry;
@@ -57,7 +60,7 @@ assign Carry = ((a&b) | (b&c) | (c&a));
 endmodule
 Logic symbol & Truthtable
 RTL realization
-
+```
 ### Output:
 ### RTL
 ![RTL](https://user-images.githubusercontent.com/94506182/190492330-fe3e330d-031a-4e83-bf24-feb4eed3c498.jpeg)
